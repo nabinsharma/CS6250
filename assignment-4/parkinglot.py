@@ -71,16 +71,16 @@ class ParkingLotTopo(Topo):
 
     def __init__(self, n=1, cpu=.1, bw=10, delay='1ms',
                  max_queue_size=None, **params):
-    """Parking lot topology with one receiver
-           and n clients.
-           n: number of clients
-           cpu: system fraction for each host
-           bw: link bandwidth in Mb/s
-           delay: link delay (e.g. 10ms)"""
-    
+        """Parking lot topology with one receiver
+        and n clients.
+        n: number of clients
+        cpu: system fraction for each host
+        bw: link bandwidth in Mb/s
+        delay: link delay (e.g. 10ms)"""
+        
         # Initialize topo
 
-    Topo.__init__(self, **params)
+        Topo.__init__(self, **params)
     
         # Host and link configuration
         hconfig = {'cpu': cpu}
@@ -96,7 +96,18 @@ class ParkingLotTopo(Topo):
         # The following template code creates a parking lot topology
         # for N = 1
         # TODO: Replace the template code to create a parking lot topology for any arbitrary N (>= 1)
-    
+        for i in range(n):
+            s = self.addSwitch('s%d' % (i + 1))
+            h = self.addHost('h%d' % (i + 1), **hconfig)
+            # Wire up receiver
+            if i == 0:
+                self.addLink(s, receiver,
+                             port1=0, port2=uplink, **lconfig)
+                self.addLink(h, s, port1=0, port2=hostlink, **lconfig)
+                continue
+            s_down = 's%d' % i
+            self.addLink(s, s_down, port1=uplink, port2=downlink, **lconfig)
+            self.addLink(h, s, port1=0, port2=hostlink, **lconfig)    
     
     # Begin: Template code
         #s1 = self.addSwitch('s1')
@@ -180,7 +191,14 @@ def run_parkinglot_expt(net, n):
     # Hint: waitOutput waits for the command to finish allowing you to wait on a particular process on the host
     # iperf command to start flow: 'iperf -c %s -p %s -t %d -i 1 -yc > %s/iperf_%s.txt' % (recvr.IP(), 5001, seconds, args.dir, node_name)
     # Hint (not important): You may use progress(t) to track your experiment progress
- 
+    cmd_template = 'iperf -c %s -p %s -t %d -i 1 -yc > %s/iperf_%s.txt'
+    receiver_ip = recvr.IP()
+    for i in range(n):
+        h = net.getNodeByName('h%d' % (i + 1))
+        h.sendCmd(cmd_template % (receiver_ip, 5001, seconds, args.dir, i + 1))
+    for i in range(n):
+        h = net.getNodeByName('h%d' % (i + 1))
+        h.waitOutput()
     
     recvr.cmd('kill %iperf')
 
