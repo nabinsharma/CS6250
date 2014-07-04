@@ -1,0 +1,18 @@
+HTTP Running : 8000  from  /home/mininet/gt-cs6250/assignment-6/myURLs/googleads.g.doubleclick.net  with delay  0.0 s
+<socket._socketobject object at 0x277ba60>
+/home/mininet/gt-cs6250/assignment-6/myURLs/googleads.g.doubleclick.net/pagead/viewthroughconversion/967079204
+/pagead/viewthroughconversion/967079204/?random=1403497080611&cv=7&fst=1403497080611&num=1&fmt=1&label=JSWsCKSChgUQpOqRzQM&guid=ON&u_h=768&u_w=1024&u_ah=768&u_aw=1024&u_cd=16&u_his=1&u_tz=-420&u_java=false&u_nplug=0&u_nmime=0&frm=0&url=http%3A//www.udacity.com/
+/pagead/viewthroughconversion/967079204/?random=1403497080611&cv=7&fst=1403497080611&num=1&fmt=1&label=JSWsCKSChgUQpOqRzQM&guid=ON&u_h=768&u_w=1024&u_ah=768&u_aw=1024&u_cd=16&u_his=1&u_tz=-420&u_java=false&u_nplug=0&u_nmime=0&frm=0&url=http%3A//www.udacity.com/
+trying hash: 9f01f30b131636117ddd72a1679d7853
+10.0.0.24 - - [22/Jun/2014 21:18:01] code 404, message file not found
+10.0.0.24 - - [22/Jun/2014 21:18:01] "GET /pagead/viewthroughconversion/967079204/?random=1403497080611&cv=7&fst=1403497080611&num=1&fmt=1&label=JSWsCKSChgUQpOqRzQM&guid=ON&u_h=768&u_w=1024&u_ah=768&u_aw=1024&u_cd=16&u_his=1&u_tz=-420&u_java=false&u_nplug=0&u_nmime=0&frm=0&url=http%3A//www.udacity.com/ HTTP/1.1" 404 -
+10.0.0.24 - - [22/Jun/2014 21:18:01] "GET /pagead/viewthroughconversion/967079204/?random=1403497080611&cv=7&fst=1403497080611&num=1&fmt=1&label=JSWsCKSChgUQpOqRzQM&guid=ON&u_h=768&u_w=1024&u_ah=768&u_aw=1024&u_cd=16&u_his=1&u_tz=-420&u_java=false&u_nplug=0&u_nmime=0&frm=0&url=http%3A//www.udacity.com/ HTTP/1.1" 200 -
+<socket._socketobject object at 0x277ba60>
+/home/mininet/gt-cs6250/assignment-6/myURLs/googleads.g.doubleclick.net/pagead/viewthroughconversion/967079204
+/pagead/viewthroughconversion/967079204/?random=1403497110217&cv=7&fst=1403497110217&num=1&fmt=1&label=JSWsCKSChgUQpOqRzQM&guid=ON&u_h=768&u_w=1024&u_ah=768&u_aw=1024&u_cd=16&u_his=1&u_tz=-420&u_java=false&u_nplug=0&u_nmime=0&frm=0&url=http%3A//www.udacity.com/
+/pagead/viewthroughconversion/967079204/?random=1403497110217&cv=7&fst=1403497110217&num=1&fmt=1&label=JSWsCKSChgUQpOqRzQM&guid=ON&u_h=768&u_w=1024&u_ah=768&u_aw=1024&u_cd=16&u_his=1&u_tz=-420&u_java=false&u_nplug=0&u_nmime=0&frm=0&url=http%3A//www.udacity.com/
+trying hash: 78e073da9021130033411e40c86d894c
+10.0.0.24 - - [22/Jun/2014 21:18:30] code 404, message file not found
+10.0.0.24 - - [22/Jun/2014 21:18:30] "GET /pagead/viewthroughconversion/967079204/?random=1403497110217&cv=7&fst=1403497110217&num=1&fmt=1&label=JSWsCKSChgUQpOqRzQM&guid=ON&u_h=768&u_w=1024&u_ah=768&u_aw=1024&u_cd=16&u_his=1&u_tz=-420&u_java=false&u_nplug=0&u_nmime=0&frm=0&url=http%3A//www.udacity.com/ HTTP/1.1" 404 -
+10.0.0.24 - - [22/Jun/2014 21:18:30] "GET /pagead/viewthroughconversion/967079204/?random=1403497110217&cv=7&fst=1403497110217&num=1&fmt=1&label=JSWsCKSChgUQpOqRzQM&guid=ON&u_h=768&u_w=1024&u_ah=768&u_aw=1024&u_cd=16&u_his=1&u_tz=-420&u_java=false&u_nplug=0&u_nmime=0&frm=0&url=http%3A//www.udacity.com/ HTTP/1.1" 200 -
+Killed

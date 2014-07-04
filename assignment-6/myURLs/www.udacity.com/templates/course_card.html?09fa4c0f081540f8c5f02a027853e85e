@@ -1,0 +1,25 @@
+<div data-ng-hide="finished" class="text-center">
+	<div class="row row-gap-huge"></div>
+	<img src="//lh5.ggpht.com/b3OandPWsUWAnRVS5d8JS8OL0nu8dU2d3NceS7p1yKhPl9KD4EhqeylPm7yFbft5wmsA2VCAZ-8wAkmFduXJ=s0#w=90&h=30" alt="Loading dots">
+</div>
+<div class="row ng-cloak">
+	<div data-ng-show="finished">
+		<div data-ng-repeat="row in rows">
+			<div class="row row-gap-small">
+				<div class="col-xs-12">
+					<div data-ng-if="lengthOfRow==5" class="col-xs-1"></div>
+					<div data-ng-repeat="course in row">
+						<div data-ng-class="columnWidthClass">
+							<a data-ng-href="/course/{{course.key}}">
+								<img class="img-responsive thumbnail thumbnail-bordered"
+									data-ng-src="{{course.servingUrl}}"
+									alt="{{course.title}}">
+							</a>
+							<strong><a data-ng-href="/course/{{course.key}}">{{course.title}}</a></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

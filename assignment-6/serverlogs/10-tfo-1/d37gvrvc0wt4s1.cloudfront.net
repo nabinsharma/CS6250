@@ -1,0 +1,6 @@
+HTTP Running : 8000  from  /home/mininet/gt-cs6250/assignment-6/myURLs/d37gvrvc0wt4s1.cloudfront.net  with delay  0.0 s
+<socket._socketobject object at 0xcc2a60>
+/home/mininet/gt-cs6250/assignment-6/myURLs/d37gvrvc0wt4s1.cloudfront.net/js/v1.0/rollbar.min.js
+/js/v1.0/rollbar.min.js
+10.0.0.24 - - [22/Jun/2014 21:19:20] "GET /js/v1.0/rollbar.min.js HTTP/1.1" 200 -
+Killed
