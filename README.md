@@ -1,4 +1,4 @@
-gt-cs6250
+CS6250
 =========
 
-Project Code for Computer Networking
+Computer Networking
